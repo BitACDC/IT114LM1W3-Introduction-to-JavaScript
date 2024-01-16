@@ -6,36 +6,32 @@
 // TODO 1.1 Use the var keyword to define a variable. Log the variable to the console. Now try moving the variable declaration after you log the variable.
 // Your code here
 console.log('Variables');
-function Var()
-{
-var a = 22;
-{
-    var a = 23;
-    console.log(a);
-
+function Var() {
+    var a = 22;
+    {
+        var a = 23;
+        console.log(a);
+    }
 }
-}
+Var(); 
 console.log(a);
 
 // TODO 1.2 Use the let keyword to define a variable.
 // Your code here
-console.log('Let')
+console.log('Let');
 function testLet() {
     let after = 12;
     {
-      let a = 22;  
-          
-      console.log(a);  
-          
+        let a = 22;
+        console.log(a);
     }
-    console.log(a);  
-  }
-
+}
+testLet();
 
 // TODO 1.3 Use the const keyword to define a variable. Try reassigning the value of the variable. What happens?
 // Your code here
-console.log('Constant variable')
-const PI = 3.141592
+console.log('Constant variable');
+const PI = 3.141592;
 //PI = PI + 22; //throws an error due to const cannot be changed or added
 
 
@@ -48,9 +44,9 @@ const PI = 3.141592
 // TODO 1.4 Try out the different arithmetic operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#arithmetic_operators
 // Your code here
-console.log('Aritmetic operators');
+console.log('Arithmetic operators');
 let ac = 22 + 64;
-ac = (22+64)*7;
+ac = (22 + 64) * 7;
 console.log(ac);
 
 // Checkpoint 1.2 What operators did you use?
@@ -61,9 +57,9 @@ console.log(ac);
 // TODO 1.5 Try out the different string operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators
 // Your code here
-console.log('string operators');
-let str1 = AC;
-let str2 = DC;
+console.log('String operators');
+let str1 = 'AC';
+let str2 = 'DC';
 let result = str1 + str2;
 console.log(result);
 
@@ -73,14 +69,13 @@ console.log(result);
 // TODO 1.6 Try out the different logical operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators
 // Your code here
+console.log('Logical operators');
 const age = 17;
 const young = true;
 
-if (age >= 16 && young)
-{
+if (age >= 16 && young) {
     console.log("You are old");
-}
-else{
+} else {
     console.log("You are too young");
 }
 
@@ -94,5 +89,5 @@ else{
 
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
-// Answer: 
+// Answer:  The expression [] == false evaluates to true. This happens because when comparing different types in JavaScript, the array is coerced into a primitive value, and an empty array ([]) coerces to an empty string (''). The empty string then coerces to the boolean value false, resulting in a true comparison.
 // Your code here
